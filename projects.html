@@ -1,95 +1,255 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Academic and research projects by Sourav Datto." />
+  <meta
+    name="description"
+    content="Research and technical projects by Sourav Datto in machine learning, quantum networking, cybersecurity, smart grids, and medical AI."
+  />
   <title>Projects | Sourav Datto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="index.html">Sourav Datto</a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
-      </nav>
+
+```
+<nav class="nav-links" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="projects.html" aria-current="page">Projects</a>
+</nav>
+```
+
   </div>
 </header>
 
 <main class="container page">
+
   <p class="eyebrow">Projects</p>
+
   <h1>Research and Technical Projects</h1>
+
   <p class="lead">
-    My projects focus on applied machine learning, AI security, cybersecurity, explainability,
-    smart grid intelligence, medical AI, and data-driven decision systems.
+    My projects focus on applied machine learning, quantum-network intelligence,
+    AI security, cybersecurity, explainability, smart grid systems, medical AI,
+    and data-driven decision support.
   </p>
 
   <section class="section">
     <div class="project-grid">
-      
-      <article class="project-card">
-        <h3>Phishing Email Payload Detection using DistilBERT</h3>
-        <p>A cybersecurity NLP project using fine-tuned transformer representations, adversarial-style text augmentation, CLS embeddings, and classical machine learning classifiers for phishing payload detection.</p>
-        <p class="tech">DistilBERT, NLP, cybersecurity, XAI</p>
-      </article>
-    
 
-      <article class="project-card">
-        <h3>LLM Prompt Injection Detection Benchmark</h3>
-        <p>A comparative AI security benchmark for prompt-injection detection using feature extraction, machine learning models, and hyperparameter tuning.</p>
-        <p class="tech">LLM security, prompt injection, machine learning</p>
-      </article>
-    
+```
+  <!-- Quantum-network routing project -->
+  <article class="project-card">
+    <h3>Physics-Informed Machine Learning for Quantum-Network Routing</h3>
 
-      <article class="project-card">
-        <h3>SecOps Log Anomaly Triage with HDFS Logs</h3>
-        <p>A SecOps-style anomaly triage workflow using HDFS logs, Isolation Forest, rare-event analysis, transition rarity, hybrid risk scoring, and analyst-facing explanations.</p>
-        <p class="tech">Anomaly detection, Isolation Forest, explainability</p>
-      </article>
-    
+    <p>
+      Developed a reproducible quantum-network routing framework using an
+      eight-node simulation built with the SeQUeNCe quantum-network simulator.
+      The project predicts whether candidate routes can satisfy end-to-end
+      entanglement requests and evaluates route-selection performance on a
+      structurally different external network topology.
+    </p>
 
-      <article class="project-card">
-        <h3>Smart Grid Stability Prediction</h3>
-        <p>Hybrid and reinforcement learning approaches for predicting and controlling smart grid stability under dynamic operational conditions.</p>
-        <p class="tech">Smart grid, reinforcement learning, adaptive control</p>
-      </article>
-    
+    <p>
+      The machine-learning pipeline uses physics-informed features such as
+      fibre loss, hop count, bottleneck link success, deadline margin,
+      fidelity margin, memory availability, effective efficiency, and
+      coherence time. Seven classical classifiers were evaluated using
+      leakage-safe nested group cross-validation.
+    </p>
 
-      <article class="project-card">
-        <h3>Medical Image Classification</h3>
-        <p>Deep learning-based classification work for melanoma detection and other medical imaging tasks, emphasizing high-precision visual diagnosis support.</p>
-        <p class="tech">Computer vision, ResNet, medical AI</p>
-      </article>
-    
-    </div>
+    <p>
+      The selected logistic regression model achieved an external-topology
+      ROC–AUC of <strong>0.950</strong>, an F1-score of
+      <strong>0.905</strong>, and a balanced accuracy of
+      <strong>0.854</strong>. When used as a routing policy, it reduced mean
+      route-selection regret by approximately <strong>46.5%</strong>
+      compared with uniform random routing.
+    </p>
+
+    <p>
+      The learned policy was also compared with minimum-hop, minimum-fibre-loss,
+      maximum-bottleneck-success, random, and oracle routing policies. It
+      significantly outperformed random selection and achieved performance
+      comparable to the strongest deterministic routing heuristics.
+    </p>
+
+    <p class="tech">
+      Quantum networking, SeQUeNCe, machine learning, nested cross-validation,
+      routing optimization, SHAP, LIME
+    </p>
+
+    <p>
+      <a
+        href="https://github.com/duttosourav8/sequence-quantum-routing-ml"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View project on GitHub →
+      </a>
+    </p>
+  </article>
+
+
+  <!-- Phishing detection project -->
+  <article class="project-card">
+    <h3>Phishing Email Payload Detection using DistilBERT</h3>
+
+    <p>
+      A cybersecurity NLP project using fine-tuned transformer
+      representations, adversarial-style text augmentation, CLS embeddings,
+      and classical machine-learning classifiers for phishing payload
+      detection.
+    </p>
+
+    <p class="tech">
+      DistilBERT, NLP, cybersecurity, XAI
+    </p>
+  </article>
+
+
+  <!-- Prompt injection project -->
+  <article class="project-card">
+    <h3>LLM Prompt Injection Detection Benchmark</h3>
+
+    <p>
+      A comparative AI-security benchmark for prompt-injection detection
+      using feature extraction, machine-learning models, and hyperparameter
+      tuning.
+    </p>
+
+    <p class="tech">
+      LLM security, prompt injection, machine learning
+    </p>
+  </article>
+
+
+  <!-- SecOps project -->
+  <article class="project-card">
+    <h3>SecOps Log Anomaly Triage with HDFS Logs</h3>
+
+    <p>
+      A SecOps-style anomaly-triage workflow using HDFS logs, Isolation
+      Forest, rare-event analysis, transition rarity, hybrid risk scoring,
+      and analyst-facing explanations.
+    </p>
+
+    <p class="tech">
+      Anomaly detection, Isolation Forest, explainability
+    </p>
+  </article>
+
+
+  <!-- Smart grid project -->
+  <article class="project-card">
+    <h3>Smart Grid Stability Prediction</h3>
+
+    <p>
+      Hybrid and reinforcement-learning approaches for predicting and
+      controlling smart-grid stability under dynamic operational conditions.
+    </p>
+
+    <p class="tech">
+      Smart grid, reinforcement learning, adaptive control
+    </p>
+  </article>
+
+
+  <!-- Medical imaging project -->
+  <article class="project-card">
+    <h3>Medical Image Classification</h3>
+
+    <p>
+      Deep-learning-based classification work for melanoma detection and
+      other medical-imaging tasks, emphasizing high-precision visual
+      diagnosis support.
+    </p>
+
+    <p class="tech">
+      Computer vision, ResNet, medical AI
+    </p>
+  </article>
+
+</div>
+```
+
   </section>
 
   <section class="section">
     <h2>GitHub</h2>
-    <p>
-      Explore my public repositories on
-      <a href="https://github.com/duttosourav8" target="_blank">GitHub</a>.
-    </p>
+
+```
+<p>
+  Explore my public repositories on
+  <a
+    href="https://github.com/duttosourav8"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>.
+</p>
+```
+
   </section>
+
 </main>
 
 <footer class="footer">
   <div class="container footer-grid">
-    <p>© 2026 Sourav Datto. Built with GitHub Pages.</p>
-    <p>
-      <a href="https://scholar.google.com/citations?user=BIM2QfUAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      <span>·</span>
-      <a href="https://www.researchgate.net/profile/Sourav-Datto/research" target="_blank">ResearchGate</a>
-      <span>·</span>
-      <a href="https://github.com/duttosourav8" target="_blank">GitHub</a>
-      <span>·</span>
-      <a href="https://www.linkedin.com/in/sourav-datto/" target="_blank">LinkedIn</a>
-    </p>
+
+```
+<p>© 2026 Sourav Datto. Built with GitHub Pages.</p>
+
+<p>
+  <a
+    href="https://scholar.google.com/citations?user=BIM2QfUAAAAJ&hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Google Scholar
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://www.researchgate.net/profile/Sourav-Datto/research"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    ResearchGate
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://github.com/duttosourav8"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://www.linkedin.com/in/sourav-datto/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn
+  </a>
+</p>
+
+
   </div>
 </footer>
 
